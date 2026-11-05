@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sample-inventory-api"
+version = "0.1.0"
+description = "샘플 재고 API"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<4.0"
+flask = "3.1.2"
+flask-cors = "4.0.0"
+gunicorn = "21.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.2"
+black = "24.1.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
